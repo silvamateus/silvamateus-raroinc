@@ -96,7 +96,7 @@ h3 {
   width: 20rem;
   align-self: flex-end;
   position: absolute;
-  right: 15rem;
+  right: 9rem;
   color: #fff;
   display: flex;
   flex-direction: column;

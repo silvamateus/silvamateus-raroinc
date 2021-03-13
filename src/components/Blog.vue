@@ -6,8 +6,7 @@
     <div class="posts">
       <div v-for="post in posts" :key="post.userid" class="post">
         <img
-          width="100%"
-          height="250px"
+          class="img"
           src="https://i.picsum.photos/id/46/650/650.jpg?hmac=DUt9PViAbahIOKRB5yvSnnw2YHVT4-wtybHv504sRmM"
           alt=""
         />
@@ -44,7 +43,12 @@ export default {
 /* Blog */
 .blog {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1366px;
+}
+.img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* Title */

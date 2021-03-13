@@ -54,7 +54,7 @@ h3 {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  max-width: 1440px;
+  max-width: 1366px;
   min-width: 1250px;
   margin: auto;
 }

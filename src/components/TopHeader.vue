@@ -55,7 +55,7 @@ h3 {
   justify-content: flex-end;
   position: relative;
   max-width: 1440px;
-  min-width: 1200px;
+  min-width: 1250px;
   margin: auto;
 }
 
@@ -138,14 +138,22 @@ h3 {
 .card p {
   font-size: 1.4rem;
 }
-
+@media (max-width: 1250px) {
+  .container {
+    flex-direction: column;
+  }
+  .contact-form {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+}
 @media (max-width: 998px) {
   .header-top {
     min-width: auto;
     padding: 0;
-  }
-  .container {
-    flex-direction: column;
   }
   .header-top,
   .box,
@@ -161,10 +169,7 @@ h3 {
     margin-bottom: 1rem;
   }
   .contact-form {
-    position: relative;
     height: auto;
-    top: auto;
-    right: auto;
   }
   .card {
     margin-top: 0;

@@ -139,15 +139,23 @@ h3 {
   font-size: 1.4rem;
 }
 @media (max-width: 1250px) {
+  .header-top {
+    padding: 0 0 1rem 0;
+    min-width: 100%;
+  }
   .container {
     flex-direction: column;
+    margin: auto;
   }
   .contact-form {
     position: relative;
     top: auto;
     right: auto;
     align-self: flex-start;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+  }
+  .card {
+    margin: auto;
   }
 }
 @media (max-width: 998px) {

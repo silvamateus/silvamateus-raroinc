@@ -103,10 +103,15 @@ export default {
   padding: 1rem 1.5rem;
   border-radius: 16px;
 }
-@media (max-width: 998px) {
+@media (max-width: 1250px) {
   .title {
     width: 100%;
   }
+  .post {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 998px) {
   .posts {
     margin-left: 0;
     display: flex;

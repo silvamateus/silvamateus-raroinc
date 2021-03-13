@@ -42,6 +42,11 @@ export default {};
 </script>
 
 <style scoped>
+/* General style */
+h3 {
+  color: #ff9b23;
+}
+
 /* Header */
 .header-top {
   padding: 0 0 1rem 8rem;
@@ -53,11 +58,13 @@ export default {};
   min-width: 1200px;
   margin: auto;
 }
+
 /* Container  */
 .container {
   display: flex;
   margin-top: 6rem;
 }
+
 /* Call to action box */
 .box {
   border: 2px solid #323469;
@@ -80,6 +87,7 @@ export default {};
   padding: 1.5rem 1rem;
   font-size: 2rem;
 }
+
 /* Contact form */
 .contact-form {
   background-color: #323469;
@@ -96,7 +104,6 @@ export default {};
   top: 555px;
 }
 .contact-form h3 {
-  color: #ff9b23;
   font-size: 2.8rem;
 }
 .contact-form p {

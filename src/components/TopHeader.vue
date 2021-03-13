@@ -27,6 +27,13 @@
         </div>
       </form>
     </div>
+    <div class="card">
+      <h3>Pense nisso...</h3>
+      <p>
+        O quanto antes o diagnóstico de uma doença grave, internação ou cirurgia
+        inesperada pode afetar, hoje, sua vida pessoal ou financeira?
+      </p>
+    </div>
   </div>
 </template>
 
@@ -86,7 +93,7 @@ export default {};
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
-  bottom: -400px;
+  top: 555px;
 }
 .contact-form h3 {
   color: #ff9b23;
@@ -109,5 +116,19 @@ export default {};
   padding: 0.5rem 2rem;
   align-self: center;
   margin-top: 1rem;
+}
+
+/* Card */
+.card {
+  width: 50ch;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+.card h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.card p {
+  font-size: 1.4rem;
 }
 </style>

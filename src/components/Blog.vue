@@ -17,7 +17,9 @@
             {{ post.body }}
           </p>
         </div>
-        <button>Continuar</button>
+        <div class="btn-container">
+          <button>Continuar</button>
+        </div>
       </div>
     </div>
   </main>
@@ -49,7 +51,7 @@ export default {
 .title {
   background-color: var(--default-bg);
   color: #fff;
-  width: 590px;
+  width: 650px;
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
@@ -67,7 +69,9 @@ export default {
   border: 2px solid var(--default-bg);
   background-color: var(--default-bg);
   width: 33rem;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .post-text {
   background-color: #fff;
@@ -75,7 +79,7 @@ export default {
   padding: 3rem 1.5rem;
   font-size: 1.2rem;
   overflow: hidden;
-  height: 14rem;
+  height: 16rem;
 }
 .post-text p {
   display: -moz-box;
@@ -86,6 +90,18 @@ export default {
 .post-text h3 {
   text-transform: capitalize;
   height: 5rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem;
+}
+.btn-container button {
+  color: #fff;
+  align-self: center;
+  background-color: #ff9b23;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
 }
 @media (max-width: 998px) {
   .title {

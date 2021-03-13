@@ -36,6 +36,10 @@ export default {
 
 <style scoped>
 /* Blog */
+.blog {
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
 /* Title */
 .title {
@@ -52,13 +56,13 @@ export default {
 .posts {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 7.1rem;
+  align-self: center;
 }
 .post {
   border: 2px solid var(--default-bg);
   background-color: var(--default-bg);
   width: 29rem;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 .post-text {
   background-color: #fff;

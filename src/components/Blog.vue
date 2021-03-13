@@ -1,6 +1,11 @@
 <template>
   <main class="blog">
-    <h2>Blog</h2>
+    <div class="title">
+      <h2>Blog</h2>
+    </div>
+    <div class="posts">
+      <div v-for="post in posts" :key="post.userid" class="post"></div>
+    </div>
   </main>
 </template>
 
@@ -19,4 +24,31 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* Blog */
+
+/* Title */
+.title {
+  background-color: var(--default-bg);
+  color: #fff;
+  width: 590px;
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Posts */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7.1rem;
+}
+.post {
+  border: 2px solid var(--default-bg);
+  background-color: var(--default-bg);
+  width: 29rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+</style>

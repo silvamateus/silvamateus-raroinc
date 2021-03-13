@@ -93,18 +93,18 @@ h3 {
   background-color: var(--default-bg);
   padding: 2.5rem 2rem;
   height: 48rem;
-  width: 30rem;
+  width: 20rem;
   align-self: flex-end;
   position: absolute;
-  right: 8rem;
+  right: 15rem;
   color: #fff;
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   top: 555px;
 }
 .contact-form h3 {
-  font-size: 2.8rem;
+  font-size: 1.7rem;
 }
 .contact-form p {
   padding: 2.5rem 0;
@@ -137,5 +137,38 @@ h3 {
 }
 .card p {
   font-size: 1.4rem;
+}
+
+@media (max-width: 998px) {
+  .header-top {
+    min-width: auto;
+    padding: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .header-top,
+  .box,
+  .contact-form {
+    width: 100%;
+  }
+  .box {
+    padding: 0 1.5rem;
+  }
+  .box button {
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  .contact-form {
+    position: relative;
+    height: auto;
+    top: auto;
+    right: auto;
+  }
+  .card {
+    margin-top: 0;
+    width: auto;
+  }
 }
 </style>

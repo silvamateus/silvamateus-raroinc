@@ -4,7 +4,17 @@
       <h2>Blog</h2>
     </div>
     <div class="posts">
-      <div v-for="post in posts" :key="post.userid" class="post"></div>
+      <div v-for="post in posts" :key="post.userid" class="post">
+        <img
+          width="100%"
+          height="250px"
+          src="https://i.picsum.photos/id/46/650/650.jpg?hmac=DUt9PViAbahIOKRB5yvSnnw2YHVT4-wtybHv504sRmM"
+          alt=""
+        />
+        <div class="post-text">
+          <h3>{{ post.title }}</h3>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -48,7 +58,29 @@ export default {
   border: 2px solid var(--default-bg);
   background-color: var(--default-bg);
   width: 29rem;
-  padding: 2rem;
-  margin: 1rem;
+  margin: 2rem;
+}
+.post-text {
+  background-color: #fff;
+  color: var(--default-bg);
+  padding: 3rem 1.5rem;
+}
+.post-text h3 {
+  text-transform: capitalize;
+}
+@media (max-width: 998px) {
+  .title {
+    width: 100%;
+  }
+  .posts {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .post {
+    margin: 2rem 0;
+    width: 100%;
+  }
 }
 </style>

@@ -13,7 +13,11 @@
         />
         <div class="post-text">
           <h3>{{ post.title }}</h3>
+          <p>
+            {{ post.body }}
+          </p>
         </div>
+        <button>Continuar</button>
       </div>
     </div>
   </main>
@@ -57,20 +61,31 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
+  padding: 1rem 0 1rem 7.2rem;
 }
 .post {
   border: 2px solid var(--default-bg);
   background-color: var(--default-bg);
-  width: 29rem;
-  margin: 2rem auto;
+  width: 33rem;
+  margin: 0 1rem;
 }
 .post-text {
   background-color: #fff;
   color: var(--default-bg);
   padding: 3rem 1.5rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+  height: 14rem;
+}
+.post-text p {
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 .post-text h3 {
   text-transform: capitalize;
+  height: 5rem;
 }
 @media (max-width: 998px) {
   .title {

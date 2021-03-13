@@ -68,8 +68,8 @@ h3 {
 /* Call to action box */
 .box {
   border: 2px solid var(--default-bg);
-  width: 29rem;
-  padding: 3rem 1.5rem;
+  width: 35rem;
+  padding: 3rem 4rem;
   font-size: 2.1rem;
   display: flex;
   flex-direction: column;
@@ -128,8 +128,8 @@ h3 {
 /* Card */
 .card {
   width: 50ch;
-  padding: 2rem;
-  margin-top: 8rem;
+  padding: 4rem;
+  margin-top: 4rem;
 }
 .card h3 {
   font-size: 2.5rem;

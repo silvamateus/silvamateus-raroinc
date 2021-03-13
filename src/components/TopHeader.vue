@@ -68,7 +68,7 @@ h3 {
 /* Call to action box */
 .box {
   border: 2px solid var(--default-bg);
-  width: 35rem;
+  width: 33rem;
   padding: 3rem 4rem;
   font-size: 2.1rem;
   display: flex;
@@ -93,21 +93,21 @@ h3 {
   background-color: var(--default-bg);
   padding: 2.5rem 2rem;
   height: 48rem;
-  width: 20rem;
+  width: 26rem;
   align-self: flex-end;
   position: absolute;
   right: 9rem;
   color: #fff;
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   top: 555px;
 }
 .contact-form h3 {
   font-size: 1.7rem;
 }
 .contact-form p {
-  padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 .inputs {
   display: flex;
@@ -122,7 +122,7 @@ h3 {
   border-radius: 16px;
   padding: 0.5rem 2rem;
   align-self: center;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 /* Card */

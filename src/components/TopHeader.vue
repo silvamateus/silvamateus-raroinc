@@ -1,10 +1,31 @@
 <template>
   <div class="header-top">
-    <div class="box">
-      <p>Vida toda</p>
-      <p>BEM ESTAR</p>
-      <p>Solução completas para viver mais e melhor</p>
-      <button>Quero uma consultoria</button>
+    <div class="container">
+      <div class="box">
+        <p>Vida toda</p>
+        <p>BEM ESTAR</p>
+        <p>Solução completas para viver mais e melhor</p>
+        <button>Quero uma consultoria</button>
+      </div>
+      <form class="contact-form">
+        <h3>Pronto para planejar o seu sossego?</h3>
+        <p>Agente uma consultoria sem compromisso pelo formulário abaixo!</p>
+        <div class="inputs">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" />
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" />
+          <label for="marital-status">Estado Civil:</label>
+          <input type="text" id="marital-status" />
+          <label for="ocupation">Profissão:</label>
+          <input type="text" id="ocupation" />
+          <label for="phone">Telefone/Whatsapp:</label>
+          <input type="phone" id="phone" />
+          <label for="income">Renda Mensal</label>
+          <input type="text" id="income" />
+          <button type="submit" class="submit">Enviar</button>
+        </div>
+      </form>
     </div>
   </div>
 </template>
@@ -14,56 +35,35 @@ export default {};
 </script>
 
 <style scoped>
+/* Header */
 .header-top {
+  padding: 0 0 1rem 8rem;
   display: flex;
-  padding: 2em 2em 0 2em;
   flex-direction: column;
   justify-content: flex-end;
-  height: 100vh;
   position: relative;
+  max-width: 1440px;
+  min-width: 1200px;
+  margin: auto;
 }
-.header-top::before {
-  content: " ";
-  background: url("https://i.picsum.photos/id/46/650/650.jpg?hmac=DUt9PViAbahIOKRB5yvSnnw2YHVT4-wtybHv504sRmM");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -2;
+/* Container  */
+.container {
+  display: flex;
+  margin-top: 6rem;
 }
-.header-top::after {
-  content: " ";
-  background-color: rgba(255, 255, 255, 0.37);
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
+/* Call to action box */
 .box {
   border: 2px solid #323469;
-  width: 26.8rem;
+  width: 29rem;
   padding: 3rem 1.5rem;
+  font-size: 2.1rem;
   display: flex;
   flex-direction: column;
-  font-size: 2.1rem;
-  margin-top: 30rem;
-  position: absolute;
-  bottom: -14rem;
-}
-.box > p:nth-child(1) {
-  font-weight: 300;
 }
 .box > p:nth-child(2) {
-  font-size: 8rem;
-  padding-bottom: 6rem;
-  word-spacing: 10px;
+  font-size: 8.5rem;
+  padding-bottom: 4rem;
+  font-weight: 800;
   margin-left: -7px;
 }
 .box button {
@@ -72,5 +72,42 @@ export default {};
   color: #fff;
   padding: 1.5rem 1rem;
   font-size: 2rem;
+}
+/* Contact form */
+.contact-form {
+  background-color: #323469;
+  padding: 2.5rem 2rem;
+  height: 48rem;
+  width: 30rem;
+  align-self: flex-end;
+  position: absolute;
+  right: 8rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  bottom: -400px;
+}
+.contact-form h3 {
+  color: #ff9b23;
+  font-size: 2.8rem;
+}
+.contact-form p {
+  padding: 2.5rem 0;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputs > input {
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.submit {
+  background: #ff9b23;
+  border-radius: 16px;
+  padding: 0.5rem 2rem;
+  align-self: center;
+  margin-top: 1rem;
 }
 </style>

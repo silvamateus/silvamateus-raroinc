@@ -67,7 +67,7 @@ h3 {
 
 /* Call to action box */
 .box {
-  border: 2px solid #323469;
+  border: 2px solid var(--default-bg);
   width: 29rem;
   padding: 3rem 1.5rem;
   font-size: 2.1rem;
@@ -90,7 +90,7 @@ h3 {
 
 /* Contact form */
 .contact-form {
-  background-color: #323469;
+  background-color: var(--default-bg);
   padding: 2.5rem 2rem;
   height: 48rem;
   width: 30rem;

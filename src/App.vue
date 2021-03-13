@@ -19,6 +19,7 @@ export default {
 <style>
 :root {
   --header-height: 670px;
+  --default-bg: #323469;
 }
 * {
   font-family: "Roboto", sans-serif;

@@ -1,7 +1,7 @@
 <template>
   <main class="blog">
     <div class="posts">
-      <div v-for="post in posts" :key="post.userid" class="post">
+      <div v-for="post in posts" :key="post.id" class="post">
         <img
           class="img"
           src="https://i.picsum.photos/id/46/650/650.jpg?hmac=DUt9PViAbahIOKRB5yvSnnw2YHVT4-wtybHv504sRmM"

@@ -13,7 +13,7 @@ Reproduzir o layout enviado
 Para usar no ambiente local faça clone do repositório:
 `git clone https://github.com/silvamateus/silvamateus-raroinc.git`
 
-depois entre no repositório do projeto:
+depois entre no diretório do projeto:
 `cd silvamateus-raroinc`
 
 E rode o script abaixo para instalar as dependências:

@@ -16,7 +16,7 @@ Para usar no ambiente local faça clone do repositório:
 depois entre no diretório do projeto:
 `cd silvamateus-raroinc`
 
-E rode o script abaixo para instalar as dependências:
+E rode o script para instalar as dependências:
 `npm install ou yarn`
 
 ## Scripts

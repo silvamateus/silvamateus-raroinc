@@ -140,7 +140,7 @@ h3 {
 }
 @media (max-width: 1250px) {
   .header-top {
-    padding: 0 0 1rem 0;
+    padding: 3rem 0 1rem 0;
     min-width: 100%;
   }
   .container {

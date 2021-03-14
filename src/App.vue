@@ -3,6 +3,9 @@
     <div class="header-background">
       <top-header />
     </div>
+    <div class="title">
+      <h2>Blog</h2>
+    </div>
     <blog />
   </div>
 </template>
@@ -20,6 +23,15 @@ export default {
 :root {
   --header-height: 670px;
   --default-bg: #323469;
+}
+.title {
+  background-color: var(--default-bg);
+  color: #fff;
+  width: calc(50% - 1.9rem);
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 * {
   font-family: "Roboto", sans-serif;

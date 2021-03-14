@@ -1,8 +1,5 @@
 <template>
   <main class="blog">
-    <div class="title">
-      <h2>Blog</h2>
-    </div>
     <div class="posts">
       <div v-for="post in posts" :key="post.userid" class="post">
         <img
@@ -49,17 +46,6 @@ export default {
   width: 100%;
   height: 250px;
   object-fit: cover;
-}
-
-/* Title */
-.title {
-  background-color: var(--default-bg);
-  color: #fff;
-  width: 650px;
-  padding: 2rem;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 3rem;
 }
 
 /* Posts */
